@@ -1,6 +1,8 @@
 <?php
 
     $mktime = mktime(22,35,25, 1,21,1904);
+
+    $time = time();
      
     $date = date('d/m/Y h:i:s', $mktime);
 
@@ -24,6 +26,7 @@
 
         <p>de timestamp van 22u 35m 25sec 21 januari 1904 is <?php echo $mktime ?></p>
         <p>de timestamp in het juiste formaat is <?php echo $date ?></p>
+        <p>de time<?php echo $time ?></p>
 
 
         
