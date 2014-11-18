@@ -17,16 +17,16 @@
         $_SESSION['adres']['nummer'] = $_POST['nummer'];
         $_SESSION['adres']['gemeente'] = $_POST['gemeente'];
         $_SESSION['adres']['postcode'] = $_POST['postcode']; 
-        $straat = $_SESSION['adres']['straat'];
-        $nummer = $_SESSION['adres']['nummer'];
-        $gemeente = $_SESSION['adres']['gemeente'];
-        $postcode = $_SESSION['adres']['postcode'];
-        $email = $_SESSION['gegevens']['email'];
-        $name = $_SESSION['gegevens']['name'];
+        
     
     }
 
- 
+        $straat = (isset ($_SESSION['adres']['straat'])) ? $_SESSION['adres']['straat'] : "" ;
+        $nummer = (isset($_SESSION['adres']['nummer'])) ? $_SESSION['adres']['nummer'] : "";
+        $gemeente = (isset($_SESSION['adres']['gemeente'])) ? $_SESSION['adres']['gemeente'] : "";
+        $postcode = (isset($_SESSION['adres']['postcode'])) ? $_SESSION['adres']['postcode'] : "";
+        $email = (isset($_SESSION['gegevens']['email'])) ? $_SESSION['gegevens']['email'] : "";
+        $name = (isset($_SESSION['gegevens']['name'])) ? $_SESSION['gegevens']['name'] : "";
 
     
 

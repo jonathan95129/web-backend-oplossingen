@@ -13,13 +13,11 @@
     if ( isset( $_POST['submit'] ) )
     {
         $_SESSION['gegevens']['email'] = $_POST['email'];
-        $_SESSION['gegevens']['name'] = $_POST['name'];
-
-        $email = $_SESSION['gegevens']['email'];
-        $name = $_SESSION['gegevens']['name'];
+        $_SESSION['gegevens']['name'] = $_POST['name'];        
     }
 
- 
+        $email = (isset ($_SESSION['gegevens']['email'])) ? $_SESSION['gegevens']['email'] : "" ;
+        $name = (isset ($_SESSION['gegevens']['name'])) ? $_SESSION['gegevens']['name'] : "" ;
 
     
 
